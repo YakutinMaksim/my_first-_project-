@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>	
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <script language="JavaScript" src = "script.js"></script>	
+<form class="reg-form" action="" onsubmit="return validation()">
+    <h1>Регистрация</h1>
+    <div class="form-row">
+        <label for="userName">Имя</label>
+        <input type="text" id="userName"> 
+        <p id="uN"></p>
+    </div>
+    <div class="form-row">
+        <label for="surName">Фамилия</label>
+        <input type="text" id="surName">
+        <p id="sN"></p>
+    </div>
+    <div class="form-row">
+        <label for="nameEmail">Email</label>
+        <input type="text" id="nameEmail">
+        <p id="nE"></p>
+    </div>
+    <div class="form-row">
+        <label for="namePassword">Пароль</label>
+        <input type="text" id="namePassword">
+        <p id="nP"></p>
+    </div>  
+    <div class="form-row">
+        <label for="confirmPassword">Проверка пароля</label>
+        <input type="text" id="confirmPassword">
+        <p id="cP"></p>
+    </div>
+    <div class="form-row">
+        <label for="dateOfBirth">Год рождения</label>
+        <input type="date" value="DD.MM.YYYY" id="dateOfBirth">
+        <p id="dOB"></p>
+    </div>
+    <div class="form-row">
+	    <input type="submit" value="Отправить"> 
+    </div>
+</form>
+
+</body>
+</html>	

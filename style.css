@@ -1,0 +1,40 @@
+.form-row {
+    margin-bottom:15px;
+    overflow: hidden;
+}
+.form-row input {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    padding: 0px 5px;
+    width: 267px;
+    border:1px solid #ABADB3;
+}
+.reg-form {
+    width: 416px;
+    margin: 0px auto;
+
+}
+h1 {
+    text-align: center;
+}
+.form-row input[type=submit] {
+    padding: 5px;
+    height: 25px;
+    width: 100%;
+    line-height: 10px;
+    background: #337AB7;
+    color: white;
+}
+.form-row button[type=submit] :hover{
+    background: #286090;
+}
+
+*{
+    font-family: arial;
+}
+
+p{
+   float: right; 
+   width: 267px;
+}
