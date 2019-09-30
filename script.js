@@ -4,7 +4,7 @@ function validation(){
     let nameemail = document.getElementById("nameEmail");
     let namepassword = document.getElementById("namePassword");
     let confirmpassword = document.getElementById("confirmPassword");
-    let dateofbirth = document.getElementById("dateOfBirth");
+    let dateofbirth = document.getElementById("dateOfBirth").value;
 
 
     if(checkName(username,4,15)){
@@ -14,8 +14,9 @@ function validation(){
     } if(checkConfirmPassword(confirmpassword,namepassword)){
     } if(checkAge(dateofbirth,18)){
     }
-
+    alert("fsefe");
     return true;
+    
 }
 function checkName(username,nameMin,nameMax){ 
     let nameLength = username.value.length;
@@ -83,15 +84,19 @@ function checkConfirmPassword(confirmpassword,namepassword){
 }
 }  
 function checkAge(dateofbirth,border){ 
-    let date1 = new Date(dateofbirth);
-	let date = Date.parse(date1);
-	let today = Date.now();
-    let age =(today - date) / (365*24*60*60*1000); 
-    alert("не обновляйся");
-	if(age < border){
-        document.getElementById("dOB").innerHTML = 'Возрост меньше 18';
-		return false;
-	}
-}
-document.getElementById("cP").innerHTML = 'Пароли не совпали';
-document.getElementById("cP").innerHTML = 'Пустое поле Пароль';
+    if(!dateofbirth){
+        document.getElementById("dOB").innerHTML = 'Пустое поле Имя';
+        return false;
+    }else{
+        let date = new Date(dateofbirth);
+        let dateMy = Date.parse(date);
+        let Today = Date.now();
+        let age =(Today - dateMy) / (365*24*60*60*1000); 
+        if(Math.floor(age) < 18){
+            document.getElementById("dOB").innerHTML = 'Возрост меньше 18';
+		}else {
+            document.getElementById("dOB").innerHTML = 'Возрост больше';
+        
+        }
+    }
+}  
