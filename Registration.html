@@ -7,11 +7,11 @@
 </head>
 <body>
     <script language="JavaScript" src = "script.js"></script>	
-<form class="reg-form" action="" onsubmit="return validation()">
+<form class="reg-form" action="" >
     <h1>Регистрация</h1>
     <div class="form-row">
         <label for="userName">Имя</label>
-        <input type="text" id="userName"> 
+        <input type="text" id="userName" autocomplete="off"> 
         <p id="uN"></p>
     </div>
     <div class="form-row">
@@ -40,10 +40,10 @@
         <p id="dOB"></p>
     </div>
     <div class="form-row">
-	    <input type="submit" value="Отправить"> 
+	    <input type="button" onclick="validation()" value="Отправить"> 
     </div>
     <div class="form-row">
-        <input type="submit" value="Назад" onclick="location.href='HomePage.html'"/> 
+        <input type="button" value="Назад" onclick="location.href='HomePage.html'"/> 
     </div>
     </form>
 </body>
