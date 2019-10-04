@@ -14,7 +14,6 @@ function validation(){
     } if(checkConfirmPassword(confirmpassword,namepassword)){
     } if(checkAge(dateofbirth,18)){
     }
-    alert("fsefe");
     return true;
     
 }
@@ -44,7 +43,7 @@ function checkSurname(surname,nameMin,nameMax){
         document.getElementById("sN").innerHTML = 'Число не подходит по размеру фамилия';
         return false;
     } if(!surname.value.match(letters)){
-        document.getElementById("sN").innerHTML = 'Ошибочно написано Фамилия';
+        document.getElementById("sN").innerHTML = 'В фамилию входит только буквы';
         return false;
     }
 }

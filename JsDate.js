@@ -15,5 +15,5 @@ function dateHomePage(){
         
         }
     }
-    alert("cnjg");
+    
 }  
